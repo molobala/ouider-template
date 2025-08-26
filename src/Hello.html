@@ -1,0 +1,18 @@
+<div>
+    <h1 :class="{red: list.value.length % 2 === 0}">Hello {{data['name']}}</h1>
+    <o-slot name="top"></o-slot>
+    <input :style="{'border': '1px solid #FE9000'}" type="text" o-model="data['name']" />
+    <button @click="() => sayHello()">Click me</button>
+    <button o-if="cancelable" @click="cancel" style="color: red">Cancel</button>
+    <div o-if="cancelable">
+        <p o-for="item of list" @click="clicked">
+            <span o-if="item !== 'Ever'">{{item}}</span>
+        </p>
+    </div>
+    <div>
+
+    <div o-for="it of users">
+        <name :name="it.name + '-' + it.age" @click="() => console.log(it.name + ' clicked')"></name>
+        <input :placeholder="it.name + ' data'" type="number" o-model="it.age"/>
+    </div>
+</div>
