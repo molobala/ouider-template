@@ -1,5 +1,5 @@
 import { OComponent, Component } from "ouider";
-import { useRouter } from "../../../src/router/Router";
+import { useRouter } from "ouider";
 
 @Component({
     tag: 'home',

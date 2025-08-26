@@ -1,6 +1,6 @@
 import { Hello } from "./src/Hello";
 import { HomePage } from "./src/Home";
-import { createRouter } from "../../src/router/Router";
+import { createRouter } from "ouider";
 
 export const router = createRouter([
     {
