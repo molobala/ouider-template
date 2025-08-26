@@ -14,7 +14,6 @@ export default {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.ojs'],
     alias: {
-      ouider: path.resolve(__dirname, '../../'),
       src: path.resolve(__dirname, 'src/')
     }
   },
