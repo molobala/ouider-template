@@ -1,6 +1,7 @@
-
-import {App} from 'ouider'
+import {App, OUID} from 'ouider'
 import { router } from './router'
 import { AppComponent } from 'src/App';
-import './global.css'
-new App(AppComponent).use(router).mount("app");
+
+
+OUID.config()
+new App(AppComponent, {}).use(router).mount("#app");

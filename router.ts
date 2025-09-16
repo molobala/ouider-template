@@ -14,17 +14,17 @@ export const router = createRouter([
         component: Hello
     }
 ])
-const me = () => {
-    return new Promise<boolean>((res) => setTimeout(() => res(false), 5000))
-}
-router.beforeEach(async (to) => {
-    if(to.name !== 'Hello') {
-        // check me
-       if(!await me()) {
-        return {
-            name: 'Hello'
-        }
-       }
-    }
-    return false
-})
+// const me = () => {
+//     return new Promise<boolean>((res) => setTimeout(() => res(false), 5000))
+// }
+// router.beforeEach(async (to) => {
+//     if(to.name !== 'Hello') {
+//         // check me
+//        if(!await me()) {
+//         return {
+//             name: 'Hello'
+//         }
+//        }
+//     }
+//     return false
+// })

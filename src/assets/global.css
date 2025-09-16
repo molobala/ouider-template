@@ -1,0 +1,12 @@
+h1 {
+    font-size: 12px;
+}
+body {
+    margin: 0;
+    /*background-color: #222222;*/
+}
+.o-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

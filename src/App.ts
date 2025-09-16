@@ -1,10 +1,14 @@
-import {Component, OComponent} from 'ouider'
-import {Hello} from './Hello';
+import {Component, OComponent, OIcon, ORouter} from 'ouider'
 
 @Component({
     template: require('./App.html'),
     tag: 'app',
-    use: [Hello]
+    css: `
+        #app {
+            height: 100%;
+        }
+    `,
+    use: {'o-icon': OIcon}
 })
 export class AppComponent extends OComponent {
     showHello = this.state.wrap(true)

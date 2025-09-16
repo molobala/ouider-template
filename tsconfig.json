@@ -1,18 +1,14 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
     "compilerOptions": {
-        "target": "es5",
-        "module": "esnext",
-        "moduleResolution": "node",
+        "target": "esnext",
+        "module": "preserve",
+        "moduleResolution": "bundler",
         "baseUrl": ".",
         "esModuleInterop": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "paths": {
-            "ouider": [
-                "../../index.ts"
-            ]
-        }
+        
     },
     "include": [
         "**/*.js",
