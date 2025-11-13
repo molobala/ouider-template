@@ -85,7 +85,12 @@ export default (env, argv) => {
       }),
       new webpack.DefinePlugin({
         __WEB_OUID_EMULATION__: JSON.stringify(isEmulation)
-      })
+      }),
+      new CopyPlugin({
+        patterns: [
+          { from: "src/assets", to: "assets" },
+        ],
+      }),
     ],
     devServer: {
       static: './dist',
