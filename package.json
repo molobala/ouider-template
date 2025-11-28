@@ -13,7 +13,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "ouider": "^0.1.1",
+    "ouider": "^0.1.5",
     "ouider-ionicons": "^0.0.1",
     "route-parser": "^0.0.5",
     "typescript": "^5.9.2",
